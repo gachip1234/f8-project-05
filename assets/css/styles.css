@@ -24,7 +24,6 @@ html {
 }
 
 body {
-  height: 10000px;
   display: flex;
   background-color: var(--bg-main);
   font-family: "Open Sans", sans-serif;
@@ -1673,7 +1672,7 @@ p {
 
 .footer__bottom {
   margin-top: 28px;
-  width: 100vw;
+  max-width: 100vw;
   height: 84px;
   background-color: var(--color-primary);
   display: flex;
