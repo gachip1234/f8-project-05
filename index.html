@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,7 +68,12 @@
         <!-- Header Content -->
         <section class="header__content">
           <!-- Header Content Left -->
-          <article class="header__content-left">
+          <article
+            class="header__content-left"
+            data-aos="fade-right"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <p class="ds-wallet">Digital Smart Wallet</p>
             <h1 class="header__heading">
               Digital <em>Payment</em> For Everyone.
@@ -76,10 +83,10 @@
               apps that accept payments and send payouts globally. We are the
               best platform.
             </p>
-            <label for="email" class="header__email--wrap">
+            <label for="email-address" class="header__email--wrap">
               <input
                 type="email"
-                id="email"
+                id="email-address"
                 placeholder="Your email address"
                 class="header__email"
               />
@@ -90,7 +97,12 @@
             </p>
           </article>
           <!-- Header Content Right -->
-          <article class="header__content-right">
+          <article
+            class="header__content-right"
+            data-aos="fade-right"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <div class="header__mobile">
               <div class="mobile__top"></div>
               <!-- Mobile Card -->
@@ -249,7 +261,12 @@
       <!-- Works Section -->
       <section class="works">
         <div class="works__container container">
-          <figure class="works__img--wrap">
+          <figure
+            class="works__img--wrap"
+            data-aos="fade-left"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <img
               src="./assets/img/works-young-man.png"
               alt="Work Image"
@@ -279,7 +296,12 @@
               </div>
             </div>
           </figure>
-          <article class="works__content">
+          <article
+            class="works__content"
+            data-aos="fade-left"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <p class="ds-wallet">Digital Smart Wallet</p>
             <h2 class="works__how-it">How it works</h2>
             <div class="works__groups">
@@ -311,7 +333,12 @@
       <section class="cards">
         <div class="cards__container container">
           <!-- Cards Payment -->
-          <article class="cards__payment">
+          <article
+            class="cards__payment"
+            data-aos="fade-up"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <p class="ds-wallet">Digital Smart Wallet</p>
             <h2 class="cards__heading">One Card For All Your Payments</h2>
             <p class="cards__desc">
@@ -333,7 +360,12 @@
             <button class="btn cards__pay--btn">Get Started</button>
           </article>
           <!-- Cards Image -->
-          <article class="cards__card--bank">
+          <article
+            class="cards__card--bank"
+            data-aos="fade-down"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <h3 class="cards__balance">Main Balance</h3>
             <p class="cards__price">$78,355.17</p>
             <div class="cards__date-name--wrap">
@@ -388,7 +420,12 @@
       <!-- Transfer Section -->
       <section class="transfer">
         <div class="transfer__container container">
-          <figure class="transfer__img--wrap">
+          <figure
+            class="transfer__img--wrap"
+            data-aos="fade-left"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <img
               src="./assets/img/young-women-transfer.png"
               alt="Work Image"
@@ -443,7 +480,12 @@
             </div>
           </figure>
           <!-- Transfer Content -->
-          <article class="transfer__payment">
+          <article
+            class="transfer__payment"
+            data-aos="fade-right"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <p class="ds-wallet">Digital Smart Wallet</p>
             <h2 class="transfer__heading">
               Transfer and Deposite Your Money Anytime
@@ -472,14 +514,24 @@
       </section>
       <!-- Testimonial Section -->
       <section class="testimonial">
-        <div class="testimonial__container container">
+        <div
+          class="testimonial__container container"
+          data-aos="fade-down"
+          data-aos-once="false"
+          data-aos-duration="2000"
+        >
           <p class="ds-wallet">Our Testimonial</p>
           <h2 class="testimonial__heading">What Clients Says</h2>
           <p class="testimonial__desc">
             Read what clients says about us and about our online banking
             services that may inspire you
           </p>
-          <section class="testimonial__per-list">
+          <section
+            class="testimonial__per-list"
+            data-aos="fade-left"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <!-- Client 1 -->
             <article class="testimonial__per-item">
               <p class="testimonial__per-say">
@@ -532,7 +584,12 @@
       <section class="blog">
         <div class="blog__container container">
           <!-- Blog Top -->
-          <section class="blog__top">
+          <section
+            class="blog__top"
+            data-aos="fade-up"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <p class="ds-wallet">Our Blog</p>
             <h2 class="blog__heading">Get The Updates</h2>
             <p class="blog__desc">
@@ -542,7 +599,12 @@
             <button class="btn blog__btn-top">Read All</button>
           </section>
           <!-- Blog Bottom -->
-          <section class="blog__bottom">
+          <section
+            class="blog__bottom"
+            data-aos="fade-down"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <!-- Blog Item 1 -->
             <article class="blog__item">
               <figure class="blog__img--wrap">
@@ -621,7 +683,12 @@
       <!-- Apps Section -->
       <section class="apps">
         <div class="container apps__container">
-          <article class="apps__wrap">
+          <article
+            class="apps__wrap"
+            data-aos="fade-top"
+            data-aos-once="false"
+            data-aos-duration="2000"
+          >
             <p class="ds-wallet apps__ds-wallet">Our Apps</p>
             <h2 class="apps__heading">Download Our Apps</h2>
             <p class="apps__desc">
@@ -728,6 +795,7 @@
                   id="email"
                   placeholder="Email Address..."
                   class="footer__input"
+                  autocomplete="off"
                 />
                 <button class="btn footer__btn">Subscribe</button>
               </div>
@@ -745,5 +813,10 @@
         </p>
       </div>
     </footer>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

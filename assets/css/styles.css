@@ -1689,3 +1689,59 @@ p {
   font-weight: 400;
   line-height: 1.75;
 }
+
+/* Animation */
+.pulse {
+  animation: pulse 2s ease-in-out 2;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 2s ease-in-out 2;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-and-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card {
+  --revealing-card: fadeInUp;
+  /* Tên animation phải khớp với tên @keyframes ở trên */
+  animation-name: fadeInUp;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+  animation-duration: 1ms; /* Bắt buộc phải có duration > 0 */
+
+  view-timeline: --revealing-card block;
+  animation-timeline: --revealing-card;
+  animation-range: entry 0% cover 30%;
+}
